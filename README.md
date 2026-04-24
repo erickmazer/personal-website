@@ -15,7 +15,9 @@ As the website evolves, new versions may appear as `v2/`, `v3/`, etc., each repr
 
 ## Live Site
 
-Visit the live website: **[erickmazer.com](https://erickmazer.com)**
+**Current deployment**: https://v1-six-lovat.vercel.app (pending erickmazer.com cutover — see [DOMAIN_CUTOVER.md](./DOMAIN_CUTOVER.md))
+
+After DNS cutover: **[erickmazer.com](https://erickmazer.com)**
 
 ## Development
 
