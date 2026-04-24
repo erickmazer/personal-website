@@ -94,47 +94,45 @@ export interface Content {
 
 export const content: Content = {
   hero: {
-    name: "Erick Mazer",
-    tagline: "Building games, raising humans, finding beauty in the imperfect",
+    name: "Erick Mazer Yamashita",
+    tagline: "Present, patient, curious",
   },
 
   bio: {
-    text: "I'm a game designer and creative technologist who believes the best work happens at the intersection of play, craft, and parenthood. I've spent years building interactive experiences that bring people together, and now I'm learning that raising children is the most challenging and rewarding design problem of all. When I'm not prototyping game mechanics or debugging React components, you'll find me reading picture books aloud, exploring parks, or trying to explain why the sky is blue.",
+    text: "I'm Erick. I live in São Paulo with my partner and our daughter, and I design things for a living. My best days are the slow ones — a walk, a long conversation, a problem solved by removing something rather than adding it. Most of what matters to me happens off the screen. But I keep coming back to design because it rewards attention, and attention is how I stay present.",
   },
 
   fatherhood: {
-    quote: "In the garden of childhood, we are both the gardener and the soil—nurturing growth while being transformed by what takes root.",
-    attribution: "Ancient proverb",
+    quote: "Attention is the beginning of devotion.",
+    attribution: "Mary Oliver, Upstream (2016)",
   },
 
   history: {
-    text: "My journey started with a fascination for how things work and why people play. I studied computer science but found my calling in game design, where logic meets imagination. Over the years, I've worked on everything from mobile puzzle games to multiplayer experiences, always asking: what makes this fun? What makes it meaningful? Becoming a father shifted my perspective entirely. Suddenly, the questions weren't just about players—they were about people. How do we teach resilience? How do we model curiosity? How do we create space for wonder? These days, I'm building projects that reflect those values: thoughtful, human-centered, and a little bit playful.",
+    text: "I started designing for the web back when designing for the web meant writing the HTML yourself. That grounding — treating craft as a form of attention — has never really left me.\n\nIn my early twenties I lived in Tokyo, studied character design and Japanese, and worked as a designer there. I came back to São Paulo with a way of looking at things that I haven't been able to shake.\n\nIn 2014 I joined Nubank when it was ten people in a small house. I stayed for eight years and helped take it from zero to seventy million customers — designing the bank account, internal tools, the design system, leading teams, and trying to make sense of what the company could become next. After Nubank I spent some time at Latitud working with Latin American founders, then taught for a while at Aprender Design and Miami Ad School.\n\nThese days I'm a full-time designer at a startup working at the intersection of AI and wealth management. On the side I advise and angel-invest in a few small companies whose teams I like. The rest of the time I try to be present.",
   },
 
   thinkingNow: {
-    text: "Right now, I'm fascinated by the intersection of generative AI and creative tools—not as a replacement for human creativity, but as a collaborator. I'm exploring how we can build systems that amplify our ideas rather than automate them away. I'm also thinking a lot about wabi-sabi, the Japanese aesthetic of finding beauty in imperfection. It's a philosophy that applies to code, to design, and especially to parenting. Nothing is ever finished, and that's okay.",
+    text: "Mostly, I'm paying attention to my daughter — what she notices, what she's afraid of, what makes her laugh at something twice. She teaches me how much I miss when I'm in a hurry.\n\nI'm sitting with a question that keeps coming back: where does AI quietly improve the craft, and where does it flatten it? I draw that line harder than I used to.\n\nI've been reading philosophy on the side for a few years now. It changes how I show up to almost everything else.",
   },
 
   media: {
     favorites: {
       books: [
-        { title: "The Design of Everyday Things", author: "Don Norman" },
-        { title: "A Pattern Language", author: "Christopher Alexander" },
-        { title: "Gödel, Escher, Bach", author: "Douglas Hofstadter" },
-        { title: "The Timeless Way of Building", author: "Christopher Alexander" },
+        { title: "In Praise of Shadows", author: "Jun'ichirō Tanizaki" },
         { title: "Where the Wild Things Are", author: "Maurice Sendak" },
       ],
       movies: [
-        { title: "Spirited Away", director: "Hayao Miyazaki" },
-        { title: "The Grand Budapest Hotel", director: "Wes Anderson" },
-        { title: "Blade Runner 2049", director: "Denis Villeneuve" },
         { title: "My Neighbor Totoro", director: "Hayao Miyazaki" },
+        { title: "Spirited Away", director: "Hayao Miyazaki" },
+        { title: "Tekkonkinkreet", director: "Michael Arias" },
+        { title: "Pan's Labyrinth", director: "Guillermo del Toro" },
+        { title: "Interstellar", director: "Christopher Nolan" },
+        { title: "The Killing of a Sacred Deer", director: "Yorgos Lanthimos" },
       ],
       series: [
         { title: "The Bear", creator: "Christopher Storer" },
-        { title: "Bluey", creator: "Joe Brumm" },
-        { title: "Severance", creator: "Dan Erickson" },
-        { title: "Adventure Time", creator: "Pendleton Ward" },
+        { title: "Mr. Robot", creator: "Sam Esmail" },
+        { title: "Parks and Recreation", creator: "Michael Schur" },
       ],
     },
     now: {
@@ -147,12 +145,12 @@ export const content: Content = {
   social: [
     { label: "GitHub", url: "https://github.com/erickmazer" },
     { label: "LinkedIn", url: "https://linkedin.com/in/erickmazer" },
-    { label: "Email", url: "mailto:hello@erickmazer.com" },
+    { label: "Email", url: "mailto:design@erickmazer.com" },
   ],
 
   meta: {
-    title: "Erick Mazer — Game Designer, Creative Technologist, Father",
-    description: "Building games, raising humans, finding beauty in the imperfect. A personal site exploring the intersection of play, craft, and parenthood.",
+    title: "Erick Mazer Yamashita",
+    description: "A small place on the internet. Designer, father, perpetual student — based in São Paulo.",
     ogImage: "/og-image.png",
   },
 
