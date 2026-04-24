@@ -1,3 +1,5 @@
+// ALL Japanese content is pre-validated. DO NOT modify kanji without consulting a reader of Japanese.
+
 export interface Hero {
   name: string;
   tagline: string;
@@ -52,7 +54,31 @@ export interface Meta {
   ogImage: string;
 }
 
-export interface Japanese {}
+export interface SectionMarker {
+  char: string;
+  reading: string;
+  meaning: string;
+}
+
+export interface Haiku {
+  ja: string;
+  en: string;
+  author: string;
+  source: string;
+}
+
+export interface Japanese {
+  sectionMarkers: {
+    hero: SectionMarker;
+    bio: SectionMarker;
+    fatherhood: SectionMarker;
+    history: SectionMarker;
+    thinkingNow: SectionMarker;
+    media: SectionMarker;
+    social: SectionMarker;
+  };
+  haiku: Haiku;
+}
 
 export interface Content {
   hero: Hero;
@@ -130,5 +156,21 @@ export const content: Content = {
     ogImage: "/og-image.png",
   },
 
-  japanese: {},
+  japanese: {
+    sectionMarkers: {
+      hero: { char: '序', reading: 'jo', meaning: 'preface' },
+      bio: { char: '己', reading: 'onore', meaning: 'self' },
+      fatherhood: { char: '父', reading: 'chichi', meaning: 'father' },
+      history: { char: '道', reading: 'michi', meaning: 'path' },
+      thinkingNow: { char: '今', reading: 'ima', meaning: 'now' },
+      media: { char: '愛', reading: 'ai', meaning: 'love' },
+      social: { char: '繋', reading: 'tsunagu', meaning: 'to connect' },
+    },
+    haiku: {
+      ja: '古池や\n蛙飛びこむ\n水の音',
+      en: 'An old pond —\na frog jumps in,\nthe sound of water.',
+      author: '松尾芭蕉 (Matsuo Bashō)',
+      source: 'Haru no Hi (春の日), 1686',
+    },
+  },
 };
