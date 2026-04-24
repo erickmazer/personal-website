@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { shipporiMincho } from "../lib/fonts";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,9 +26,18 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${shipporiMincho.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <p
+          data-testid="japanese-font-test"
+          className={shipporiMincho.className}
+          style={{ padding: "1rem", fontSize: "1.5rem" }}
+        >
+          ある朝、桜が咲いた。
+        </p>
+      </body>
     </html>
   );
 }
