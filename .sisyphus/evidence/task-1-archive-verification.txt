@@ -1,0 +1,18 @@
+ARCHIVE VERIFICATION REPORT
+===========================
+
+Archive Location: /Users/erickmazer/repositories/personal-website/v0/index.html
+Archive Size: 2438 bytes
+
+HTML Content Verification:
+- Contains <html> tag: True
+- Contains <head> tag: True
+- Contains <body> tag: True
+- Page Title: Erick Mazer - Designer
+- Contains CSS links: True
+
+Files in Archive:
+  - ARCHIVE.md (53 bytes)
+  - index.html (2438 bytes)
+  - tachyons.min.css (85756 bytes)
+  - simple.css (2518 bytes)
