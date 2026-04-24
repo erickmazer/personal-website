@@ -45,7 +45,7 @@ export function Media() {
         </div>
 
         <div className="max-w-md">
-          <p className="text-xs tracking-widest uppercase text-[color:var(--color-patina)] mb-3 opacity-60">Right now</p>
+          <p className="text-xs tracking-widest uppercase text-[color:var(--color-patina)] mb-3">Right now</p>
           <dl className="text-sm space-y-1 text-[color:var(--color-paper)]/80">
             <div className="flex gap-3"><dt className="text-[color:var(--color-ash)] w-24">Reading</dt><dd>{now.reading}</dd></div>
             <div className="flex gap-3"><dt className="text-[color:var(--color-ash)] w-24">Watching</dt><dd>{now.watching}</dd></div>

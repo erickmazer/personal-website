@@ -19,6 +19,7 @@
         "three": "^0.184.0",
       },
       "devDependencies": {
+        "@axe-core/playwright": "^4.11.2",
         "@tailwindcss/postcss": "^4",
         "@types/mdx": "^2.0.13",
         "@types/node": "^20",
@@ -38,6 +39,8 @@
   ],
   "packages": {
     "@alloc/quick-lru": ["@alloc/quick-lru@5.2.0", "https://frontier-589636152516.d.codeartifact.us-east-1.amazonaws.com/npm/npm/@alloc/quick-lru/-/quick-lru-5.2.0.tgz", {}, "sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw=="],
+
+    "@axe-core/playwright": ["@axe-core/playwright@4.11.2", "https://frontier-589636152516.d.codeartifact.us-east-1.amazonaws.com/npm/npm/@axe-core/playwright/-/playwright-4.11.2.tgz", { "dependencies": { "axe-core": "~4.11.3" }, "peerDependencies": { "playwright-core": ">= 1.0.0" } }, "sha512-iP6hfNl9G0j/SEUSo8M7D80RbcDo9KRAAfDP4IT5OHB+Wm6zUHIrm8Y51BKI+Oyqduvipf9u1hcRy57zCBKzWQ=="],
 
     "@babel/code-frame": ["@babel/code-frame@7.29.0", "https://frontier-589636152516.d.codeartifact.us-east-1.amazonaws.com/npm/npm/@babel/code-frame/-/code-frame-7.29.0.tgz", { "dependencies": { "@babel/helper-validator-identifier": "^7.28.5", "js-tokens": "^4.0.0", "picocolors": "^1.1.1" } }, "sha512-9NhCeYjq9+3uxgdtp20LSiJXJvN0FeCtNGpJxuMFZ1Kv3cWUNb6DOhJwUvcVCzKGR66cw4njwM6hrJLqgOwbcw=="],
 
@@ -948,6 +951,8 @@
     "picocolors": ["picocolors@1.1.1", "https://frontier-589636152516.d.codeartifact.us-east-1.amazonaws.com/npm/npm/picocolors/-/picocolors-1.1.1.tgz", {}, "sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA=="],
 
     "picomatch": ["picomatch@4.0.4", "https://frontier-589636152516.d.codeartifact.us-east-1.amazonaws.com/npm/npm/picomatch/-/picomatch-4.0.4.tgz", {}, "sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A=="],
+
+    "playwright-core": ["playwright-core@1.59.1", "https://frontier-589636152516.d.codeartifact.us-east-1.amazonaws.com/npm/npm/playwright-core/-/playwright-core-1.59.1.tgz", { "bin": { "playwright-core": "cli.js" } }, "sha512-HBV/RJg81z5BiiZ9yPzIiClYV/QMsDCKUyogwH9p3MCP6IYjUFu/MActgYAvK0oWyV9NlwM3GLBjADyWgydVyg=="],
 
     "possible-typed-array-names": ["possible-typed-array-names@1.1.0", "https://frontier-589636152516.d.codeartifact.us-east-1.amazonaws.com/npm/npm/possible-typed-array-names/-/possible-typed-array-names-1.1.0.tgz", {}, "sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg=="],
 

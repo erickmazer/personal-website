@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useMemo, useSyncExternalStore } from 'react'
 
 export interface WebGLDetection {
   webgl2: boolean
@@ -31,40 +31,27 @@ export function detectWebGL(): WebGLDetection | null {
 }
 
 export function usePrefersReducedMotion(): boolean {
-  const [prefers, setPrefers] = useState(false)
-
-  useEffect(() => {
-    const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
-    const update = () => setPrefers(mq.matches)
-    update()
-    mq.addEventListener('change', update)
-    return () => mq.removeEventListener('change', update)
-  }, [])
-
-  return prefers
+  return useSyncExternalStore(
+    (callback) => {
+      const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
+      mq.addEventListener('change', callback)
+      return () => mq.removeEventListener('change', callback)
+    },
+    () => window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+    () => false,
+  )
 }
 
 export type ShaderTier = 'full' | 'reduced' | 'static' | 'css'
 
 export function useShaderTier(): ShaderTier {
-  const [tier, setTier] = useState<ShaderTier>('css') // SSR-safe default
   const prefersReduced = usePrefersReducedMotion()
 
-  useEffect(() => {
-    if (prefersReduced) {
-      setTier('static')
-      return
-    }
-
+  return useMemo<ShaderTier>(() => {
+    if (typeof window === 'undefined') return 'css'
+    if (prefersReduced) return 'static'
     const detected = detectWebGL()
-    if (!detected || !detected.webgl) {
-      setTier('css')
-      return
-    }
-
-    // Default to 'full'. Task 16 hooks PerformanceMonitor to downgrade to 'reduced'.
-    setTier('full')
+    if (!detected || !detected.webgl) return 'css'
+    return 'full'
   }, [prefersReduced])
-
-  return tier
 }

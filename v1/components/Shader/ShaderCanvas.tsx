@@ -78,8 +78,11 @@ function Scene({ tier }: { tier: Exclude<ShaderTier, 'css'> }) {
 
 export default function ShaderCanvas({ tier }: ShaderCanvasProps) {
   const [currentTier, setCurrentTier] = useState(tier)
-
-  useEffect(() => setCurrentTier(tier), [tier])
+  const [prevTier, setPrevTier] = useState(tier)
+  if (tier !== prevTier) {
+    setPrevTier(tier)
+    setCurrentTier(tier)
+  }
 
   const frameloop = currentTier === 'static' ? 'never' : 'always'
 
